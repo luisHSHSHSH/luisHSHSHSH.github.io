@@ -1,50 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario</title>
+  <style>
+	body {
+  	font-family: Arial, sans-serif;
+  	margin: 0;
+  	padding: 20px;
+	}
 
-	<meta charset="UTF-8">
-	<title>Mi Primera Página Web</title>
-	<style>
-	    body {
-	        background-color: #888;
-	        h1, h2 {
-	            color: 1c33;
-	        }
-	    }
-	</style>
+	h1 {
+  	text-align: center;
+  	margin-bottom: 80px;
+	}
+
+	.perfil {
+  	width: 300px;
+  	margin: 20px auto;
+  	padding: 50px;
+  	border: 5px solid #ddd;
+  	text-align: center;
+  	position: relative;
+	}
+
+	.perfil img {
+  	width: 100px;
+  	height: 100px;
+  	border-radius: 50%;
+  	position: absolute;
+  	top: -50px;
+  	left: 50%;
+  	transform: translateX(-50%);
+	}
+
+	.menu {
+  	position: fixed;
+  	top: 0;
+  	width: 100%;
+  	background: #333;
+  	color:blue;
+  	padding: 10px;
+  	text-align: center;
+	}
+
+	.menu a {
+  	color: blue;
+  	margin: 0 15px;
+  	text-decoration: none;
+	}
+  </style>
 </head>
 <body>
-	<header>
-    	<h1>Bienvenidos a mi sitio web, soy luis omar amador monroy</h1>
-	</header>
-	<nav>
-    	<ul>
-        	<li><a href="#inicio">Inicio</a></li>
-        	<li><a href="#acerca">Acerca de</a></li>
-        	<li><a href="mapa.html">mapa</a></li>
-    	</ul>
-	</nav>
-	<section id="inicio">
-    	<h2>Inicio</h2>
-    	<i><p>mis intereses son tener un  buen estado fisico una buena estabilidad economica y cumplir mis sueños uwu</i>.
-.</p>
-    	<img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91iOf-Y9eInL7ckh56X-1muBBnN4KHdR6KQ&s>
-    	<alt>  el mejor de los tiempos </alt>
-    	<p> Misn intereses son:</p>
-    	<li></lip>gym
-    	<li></lit>Las weras fresas con vz ronca
-    	<li></lit>café frío
-	<li></lit>los culos
-    	<li></lit>UFC
-    	<li></lit>Los culos
-    	<li></lit>Los soundcloud
-	<li></lit>y los culos
-	</section>
-	<footer>
-    	<p>Derechos reservados 2025.</p>
-	</footer>
-	<a>
-	
+
+  <div class="menu">
+	<a href="#">Inicio</a>
+	<a href="#">Contacto</a>
+	<a href="#">Sobre mí</a>
+  </div>
+
+  <h1>Luis Omar Amador Monroy</h1>
+
+  <div class="perfil">
+	<img src="data:image/jpeg;base64,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" alt="Foto de perfil">
+	<p>soy luis amador me gusta hacer deporte como el gimnasio tambien me gusta mucho la ufc y la musica.</p>
+  </div>
+
 </body>
 </html>
